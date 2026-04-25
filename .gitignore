@@ -1,0 +1,7 @@
+venv311/
+.venv/
+__pycache__/
+*.pyc
+creditcard.csv
+fraud_transactions.db
+transaction_log.csv
