@@ -1,13 +1,21 @@
 # database.py
 import pymysql
 from datetime import datetime
+import os
 
 def get_connection():
+    host = os.getenv('MYSQLHOST', 'localhost')
+    user = os.getenv('MYSQLUSER', 'root')
+    password = os.getenv('MYSQLPASSWORD', 'fraud123')
+    database = os.getenv('MYSQLDATABASE', 'fraud_detection')
+    port = int(os.getenv('MYSQLPORT', '3306'))
+    
     return pymysql.connect(
-        host='localhost',
-        user='root',
-        password='fraud123',
-        database='fraud_detection',
+        host=host,
+        user=user,
+        password=password,
+        database=database,
+        port=port,
         cursorclass=pymysql.cursors.DictCursor
     )
 
