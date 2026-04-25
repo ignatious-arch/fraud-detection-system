@@ -17,7 +17,7 @@ st.markdown("Real-time fraud detection powered by XGBoost machine learning")
 st.divider()
 
 # API URL
-API_URL = "http://127.0.0.1:8000"
+API_URL = "https://web-production-4181.up.railway.app"
 
 # Section 1 - Stats at the top
 st.subheader("📊 System Statistics")
