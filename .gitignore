@@ -5,3 +5,5 @@ __pycache__/
 creditcard.csv
 fraud_transactions.db
 transaction_log.csv
+.ipynb_checkpoints/
+*.csv
